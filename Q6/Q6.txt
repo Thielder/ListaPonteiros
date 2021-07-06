@@ -1,0 +1,19 @@
+O arquivo foi modificado para uma melhor visualização já que os resultados de uma mesma linha ficariam sem espaços entre eles dificultando a leitura e compreensão.
+(considerando 4000 como a posição inicial do vetor vet[], float ocupando 4 Bytes e apenas o sistema decimal)
+Respostas esperadas:
+contador/valor/valor/endereco/endereco
+i = 0 / vet[0] = 1.1 / *(f + 0) = 1.1 / &vet[0] = 4000 / (f + 0) = 4000
+i = 1 / vet[1] = 2.2 / *(f + 1) = 2.2 / &vet[1] = 4004 / (f + 0) = 4004
+i = 2 / vet[2] = 3.3 / *(f + 2) = 3.3 / &vet[2] = 4008 / (f + 0) = 4008
+i = 3 / vet[3] = 4.4 / *(f + 3) = 4.4 / &vet[3] = 4012 / (f + 0) = 4012
+i = 4 / vet[4] = 5.5 / *(f + 4) = 5.5 / &vet[4] = 4016 / (f + 0) = 4016
+
+Respostas esperadas:
+contador/valor/valor/endereco/endereco
+i = 0 / vet[0] = 1.1 / *(f + 0) = 1.1 / &vet[0] = 0x7fffef3af060 / (f + 0) = 0x7fffef3af060
+i = 1 / vet[1] = 2.2 / *(f + 1) = 2.2 / &vet[1] = 0x7fffef3af064 / (f + 0) = 0x7fffef3af064
+i = 2 / vet[2] = 3.3 / *(f + 2) = 3.3 / &vet[2] = 0x7fffef3af068 / (f + 0) = 0x7fffef3af068
+i = 3 / vet[3] = 4.4 / *(f + 3) = 4.4 / &vet[3] = 0x7fffef3af06c / (f + 0) = 0x7fffef3af06c
+i = 4 / vet[4] = 5.5 / *(f + 4) = 5.5 / &vet[4] = 0x7fffef3af070 / (f + 0) = 0x7fffef3af070
+
+O resultado foi totalmente dentro do esperado, a única divergência é o fato que o computador utiliza o sistema hexadecimal para as posições na memória, e mesmo que eu o tivesse utilizado, não seria possível prever as posições exatas onde seria feita a alocação pelo sistema.

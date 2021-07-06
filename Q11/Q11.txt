@@ -1,0 +1,8 @@
+aloha[2] = value; -> válido (atribui o valor 2.2 a terceira posição de aloha[]);
+scanf("%f", &aloha); -> inválido (aloha já aponta para um endereço);
+aloha = "value"; -> inválido (tentativa de atribuir uma string a primeira posição de um vetor de floats);
+printf("%f", aloha); -> inválido (%f deve receber um float, mas neste caso recebe um endereço);
+coisas[4][4] = aloha[3]; -> válido (atribui um valor float a um float);
+coisas[5] = aloha; -> inválido (tenta atribuir um endereço a um float);
+pf = value; -> inválido (tenta atribuir um float a um ponteiro para float);
+pf = aloha; -> válido (atribui o endereço da primeira posição do vetor);

@@ -1,0 +1,5 @@
+//como a terceira expressão estava com erro de digitação, imaginei que poderia ser algo do tipo.
+p = mat + 1; -> válido (atribui o endereço da segunda posição do vetor mat[] ao ponteiro p);
+p = mat; -> válido (atribui o endereço da primeira posição do vetor mat[] ao ponteiro p);
+p = ++mat; -> inválido (tanto o pré-incremento quanto o pós-incremento não funcionam com ponteiros);
+x = (*mat); -> válido (atribui o valor da primeira posição do vetor mat[] ao inteiro x);
