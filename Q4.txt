@@ -1,8 +1,0 @@
-p = &i; -> válido;
-*q = &j; -> inválido (tentativa de atribuição de ponteiro em variável inteira);
-p = &*&i; -> válido (mesmo que p = &i);
-i = (*&)j; -> inválido (tenta resolver primeiro o que está no parenteses, o que já faz a expressão inválida já que *& não é independente);
-i = *&j; -> válido (mesmo que i = j);
-i = &&j; -> inválido (&&j é um ponteiro para void e não pode ser atribuido a um inteiro);
-q = *p; -> inválido (tentativa de atribuição de inteiro em um ponteiro);
-i = (*p) + *q; -> válido;
