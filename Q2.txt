@@ -1,4 +1,0 @@
-p == &i -> true ou 1
-*p - *q -> -2
-**&p; -> 3
-3 - *p/(*q) + 7 -> 9 (como são apenas inteiros envoldidos na equação, a saída será inteira)
