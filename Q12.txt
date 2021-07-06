@@ -1,0 +1,1 @@
+Assim como uma variável, as funções de um programa estão em algum lugar da memória, portanto, possuem um endereço e podem ser referenciadas por um ponteiro, abrindo um leque de possibilidades no desenvolvimento.

@@ -1,0 +1,2 @@
+O primeiro programa exibe os valores contidos em vet[], ou seja, 4 9 13.
+já o segundo, exibe os endereços de vet[], de suas três posições.
