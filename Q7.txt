@@ -1,5 +1,0 @@
-*(pulo + 2); -> referencia o valor do terceiro elemento do vetor pulo[]
-*(pulo + 4); -> referencia o valor do quinto elemento do vetor pulo[]
-pulo + 4 -> referencia o endereço da quinta posição do vetor
-pulo + 2 -> referencia o endereço da terceira posição do vetor
-Logo, a primeira expressão é a única que referencia o primeiro valor do vetor pulo[], embora a quarta expressão tenha ligação, não referencia o valor em si, apenas o endereço de memória onde está guardado o elemento.
