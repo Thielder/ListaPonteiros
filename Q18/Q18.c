@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <locale.h>
 
-void recebe(int **mat, int rowA, int ColArowB);
+void recebe(int **mat, int row, int Col);
 void multi(int **m_a, int **m_b, int **m_c, int rowA, int ColArowB,int ColB);
-void exibir(int **mat, int rowA, int ColArowB);
+void exibir(int **mat, int row, int Col);
 
 int main(){
 	setlocale(LC_ALL, "Portuguese");
@@ -67,10 +67,10 @@ int main(){
 	return 0;
 }
 
-void recebe(int **mat, int rowA, int ColArowB){
+void recebe(int **mat, int row, int Col){
 	int i = 0, j = 0;
-	for(i=0; i<rowA; i++){
-		for(j=0; j<ColArowB; j++){
+	for(i=0; i<row; i++){
+		for(j=0; j<Col; j++){
 			printf("informe o valor para a posição %i x %i: ", i+1, j+1);
 			scanf("%i", &mat[i][j]);
 		}
@@ -90,10 +90,10 @@ void multi(int **m_a, int **m_b, int **m_r, int rowA, int ColArowB, int ColB){
 	}
 }
 
-void exibir(int **mat, int rowA, int ColArowB){//exibe uma matriz mxn
+void exibir(int **mat, int row, int Col){//exibe uma matriz mxn
 	int i, j;
 	for(i=0; i<rowA; i++){
-		for(j=0; j<ColArowB; j++){
+		for(j=0; j<Col; j++){
 			printf("%i ", mat[i][j]);
 		}
 	printf("\n");
